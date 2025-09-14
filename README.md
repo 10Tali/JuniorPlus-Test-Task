@@ -42,3 +42,31 @@
 3. По завершении работы:  
    - Создайте **Pull Request** в этот репозиторий.  
    - В описание PR приложите скриншот модели БД.  
+
+
+
+
+---
+
+## Собрать и поднять проект
+```
+Создать файл .env, заполнить (пример ниже)
+Воспользоваться командой docker-compose up --build
+```
+
+## Переменные окружения (.env)
+Пример:
+```
+DATABASE_URL=postgres://postgres:postgres@db:5432/notes
+BACKEND_PORT=4000
+DB_HOST=db
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_NAME=notes
+FRONTEND_PORT=8080
+VITE_API_URL=/api
+```
+## API
+Документация доступна по адресу: `/api-docs` (Swagger)
+
+---
